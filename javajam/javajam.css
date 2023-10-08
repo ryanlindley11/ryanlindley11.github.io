@@ -1,6 +1,14 @@
 
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
 body {
-    background-color: #FCEBB6;
+    background-image: url('images/fadedroad50.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     color: #221811;
     font-family: 'Roboto', sans-serif;
 }
@@ -10,29 +18,76 @@ body {
     background-color: #FEFAEB;
     margin-right: auto;
     margin-left: auto;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 0 3px 3px #221811;
 }
 
+#homehero {
+    height: 300px;
+    background-size: cover;
+    padding: 0;
+}
 
-.header {
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
     color: #8C3826;
     background-color: #D2B48C;
     text-align: center;
+    padding-top: .3em;
+    padding-bottom: .3em;
 }
 
 h1 {
-    line-height: 200%;
+    font-size: 3em;
 }
 
 h2 {
     color: #8C3826;
 }
 
-.nav {
-    text-align: center;
-    font-weight: bold;
+h3 {
+    color:#8C3826
 }
+
+dt {
+    color:#8C3826
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
+}
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 1em;
+}
+
 
 footer {
     background-color: #D2B48C;
     text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8C3826
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
 }
