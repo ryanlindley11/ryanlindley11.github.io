@@ -1,8 +1,24 @@
-
+* {
+    box-sizing: border-box;
+}
 main {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 2em;
+    padding-top: 0;
+    margin-left: 200px;
+    background-color: #FEF6C2;
+}
+
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+  padding-left: 3em;
+  padding-right: 2em;
 }
 
 body {
@@ -15,17 +31,30 @@ body {
 
 #wrapper {
     width: 80%;
-    background-color: #FEFAEB;
+    background-color: #231814;
     margin-right: auto;
     margin-left: auto;
     min-width: 900px;
     max-width: 1280px;
     box-shadow: 0 3px 3px #221811;
+    padding: 0;
 }
 
 #homehero {
     height: 300px;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 0;
+}
+
+#heromugs {
+    height: 300px;
+    background-size: 100% 100%;
+    padding: 0;
+}
+
+#heroguitar {
+    height: 300px;
+    background-size: 100% 100%;
     padding: 0;
 }
 
@@ -39,12 +68,27 @@ img {
 }
 
 header {
-    color: #8C3826;
     background-color: #D2B48C;
-    text-align: center;
+    background-image: url("coffeelogo.jpg");
+    background-repeat: no-repeat;
+    padding-left: 240px;
+    color: #231814;
     padding-top: .3em;
-    padding-bottom: .3em;
+    padding-bottom: 2em;
 }
+
+header a {
+    text-decoration: none;
+    color: #231814;
+  }
+  
+  header a:visited {
+    color: #231814;
+  }
+  
+  header a:hover {
+    color: #FEF6C2;
+  }
 
 h1 {
     font-size: 3em;
@@ -63,21 +107,38 @@ dt {
 }
 
 h4 {
+    text-transform: uppercase; 
     background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .25em;
+    padding-bottom: 0;
+    border-bottom: 2px solid #8C3826;
 }
+
 nav {
-    text-align: center;
+    float: left;
+    width: 200px;
     font-size: 1.5em;
     padding-top: .5em;
     padding-bottom: .5em;
 }
 
 nav a {
+    color: #fef6c2;
     text-decoration: none;
-    padding-right: 1em;
+    padding-left: 0;
+}
+
+nav a:link:visited {
+    color: #D2B48C;
+}
+
+nav a:link:hover {
+    color: #CC9933;
+}
+.onethird {
+    float: left;
+    width: 33%;
 }
 
 #coffeemugs {
@@ -89,6 +150,18 @@ nav a {
      margin-top: 20px;
 }
 
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+} 
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
 footer {
     font-style: italic;
     background-color: #D2B48C;
@@ -97,7 +170,3 @@ footer {
     border-top: 2px solid #8C3826
 }
 
-.details {
-    padding-left: 20%;
-    padding-right: 20%;
-}
