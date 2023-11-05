@@ -40,23 +40,34 @@ body {
     padding: 0;
 }
 
+/* home header - road */
 #homehero {
     height: 300px;
     background-size: 100% 100%;
     padding: 0;
 }
 
+/* menu header - coffee cups on shelf */
 #heromugs {
     height: 300px;
     background-size: 100% 100%;
     padding: 0;
 }
-
+/* music header - guitar */
 #heroguitar {
     height: 300px;
     background-size: 100% 100%;
     padding: 0;
 }
+/* jobs header - coffee cup */
+  #herojobs {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-size: 100% 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+  }
 
 img {
     border-style: none;
@@ -136,10 +147,6 @@ nav a:link:visited {
 nav a:link:hover {
     color: #CC9933;
 }
-.onethird {
-    float: left;
-    width: 33%;
-}
 
 #coffeemugs {
     float: right;
@@ -170,3 +177,43 @@ footer {
     border-top: 2px solid #8C3826
 }
 
+/* table styling */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-spacing: 0px;
+  }
+  
+  /* table cell styling (td and th) */
+  td, th {
+    padding: 10px;
+  }
+  
+  /* alternate row background color */
+  tr:nth-of-type(odd) {
+    background-color: #D2B48E;
+  }
+
+/* First Media Query for larger screens */
+@media screen and (min-width: 768px) {
+    form { display: flex;
+        flex-direction: column;
+        padding-left: 1em; width: 80%; 
+    }
+    input, textarea { margin-bottom: .5em;
+    }
+    }
+
+/* form element styling */
+form {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    grid-gap: 1em;
+  }
+
+/* format submit button */
+form input[type="submit"] {
+    grid-column: 2; 
+    width: 9em;
+}
