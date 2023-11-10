@@ -39,6 +39,7 @@
         <div>
           <img id="homehero" src="images/hero.jpg" alt="Winding Road" >
         </div>
+        <!-- page header -->
         <h2>Follow the Winding Road to JavaJam</h2>
         <p>
           We're a little out of the way, but take a drive in the country down
@@ -66,10 +67,20 @@
         </div>
       </main>
       <footer>
+        <!-- copyright -->
         <div>Copyright &copy; 2023 JavaJam Coffee Bar</div>
         <div>
+          <!-- email link -->
           <a href="ryan@lindley.com">ryan@lindley.com</a>
         </div>
+        <div id="lastModifiedMessage"></div>
+        <script>
+          var lastModifiedDate = new Date(document.lastModified);
+          var formattedDate = lastModifiedDate.toLocaleString();
+
+          var message = "This page was last modified on: " + formattedDate;
+          document.getElementById("lastModifiedMessage").innerText = message;
+      </script>
       </footer>
     </div>
   </body>
