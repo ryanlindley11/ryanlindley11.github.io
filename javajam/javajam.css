@@ -80,7 +80,7 @@ img {
 
 header {
     background-color: #D2B48C;
-    background-image: url("coffeelogo.jpg");
+    background-image: url("images/coffeelogo.jpg");
     background-repeat: no-repeat;
     padding-left: 240px;
     color: #231814;
@@ -206,11 +206,16 @@ table {
 
 /* form element styling */
 form {
-    width: 40%;
-    display: grid;
-    grid-template-columns: 6em 1fr;
-    grid-gap: 1em;
-  }
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 80%;
+}
+
+input,
+textarea {
+	margin-bottom: .5em;
+}
 
 /* format submit button */
 form input[type="submit"] {
