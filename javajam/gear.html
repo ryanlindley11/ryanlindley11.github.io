@@ -35,35 +35,40 @@
         </ul>
       </nav>
       <main>
-        <div id="herojobs">
-          <img src="images/coffeecup.jpg" alt="herojobs">
+        <div id="herocouch">
+          <img src="images/herocouch.jpg" alt="herocouch">
         </div>
 
-        <h2>Jobs at JavaJam</h2>
-
+        <h2>JavaJam Gear</h2>
         <p>
-            Want to work at JavaJam? Fill out the form below to start your application. All information is required.
+            JavaJam gear not only looks good, it’s good to your wallet, too.
         </p>
-        <!--Application Form-->
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label> 
-            <input type="text" id="name" name="name" required> 
-            <br>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required> 
-            <br>
-        
-            <label for="start-date">Start Date:</label>
-            <input type="date" id="start-date" name="start-date" required>
-             <br>
-        
-            <label for="experience">Experience:</label>
-            <textarea id="experience" name="experience" rows="2" cols="20" required></textarea> 
-            <br>
-        
-            <input type="submit" value="Apply Now">
-        </form>
+        <p>
+            Get a 10% discount when you wear a JavaJam shirt or bring in your JavaJam mug!
+        </p>
+        <div class="item">
+            <img class='itemimg' src="images/javashirt.jpg" alt="javashirt">
+            <h3>JavaJam Shirt</h3>
+            <p>
+                JavaJam shirts are comfortable to wear to school and around town. 
+                100% cotton. XL only. $14.95
+            </p>
+            <form method="post"
+                action="https://webdevbasics.net/cart.html">
+                <input type="submit" value="Add to Cart">
+            </form>
+        </div>
+        <div class="item">
+            <img class ='itemimg' src="images/javamug.jpg" alt="javamug">
+            <h3>JavaJam Mug</h3>
+            <p>
+                JavaJam mugs carry a full load of caffeine (12 oz.) to jump-start your morning. $9.95
+            </p>
+            <form method="post"
+                action="https://webdevbasics.net/cart.html">
+                <input type="submit" value="Add to Cart">
+            </form>
+        </div>
       </main>
 
       <footer>

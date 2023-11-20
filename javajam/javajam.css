@@ -222,3 +222,22 @@ form input[type="submit"] {
     grid-column: 2; 
     width: 9em;
 }
+
+
+/* gear page */
+.item {
+    background-color: #FAF9F7;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+}
+
+.itemimg {
+    float: right;
+}
+
+#herocouch {
+    height: 300px;
+    background-size: 100% 100%;
+    padding: 0;
+}

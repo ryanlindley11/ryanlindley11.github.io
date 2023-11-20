@@ -69,50 +69,42 @@ a:visited {
 
 .left {
     float: left;
+    color:black;
 }
 
-.right {
+.left:hover {
+    color:#4C2FFF;
+}
+
+.nav {
     padding-left: 3em;
     padding-top: 3.6em;
 }
 
-/*flexbox on homepage */
-.parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .words {
-    position: absolute;
+/* homepage catch */
+.catch-container {
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 54px;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    font-size: 1.7em;
 }
 
-#small {
-    font-size: 28px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
-#big {
-    font-size: 146px;
-    margin-top: -20px;
-    margin-bottom: -20px;
+.small {
+    transition: font-size 0.5s ease;
 
 }
 
-ul {
-    list-style-type: none;
+.small:hover {
+    font-size: 70%;
 }
 
-#social {
-    text-align: right;
-    padding-right: 5%;
-    padding: 2em;
+.big {
+    transition: font-size 0.5s ease;
+
+}
+
+.big:hover {
+    font-size: 130%;
 }
 
 
@@ -132,7 +124,7 @@ ul {
 } 
 
 .work-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #catch {
