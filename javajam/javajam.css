@@ -140,6 +140,41 @@ nav a {
     padding-left: 0;
 }
 
+nav ul {
+
+    /* display: flex;
+
+    flex-direction: column; */
+
+    font-size: 1.25em;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+nav li {
+
+    border-bottom: 1px solid #FEF6C2;
+
+    /* padding: .5em 1em;
+
+    width: 100%; */
+
+}
+
+nav li a {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: .5em 1em;
+}
+
 nav a:link:visited {
     color: #D2B48C;
 }
