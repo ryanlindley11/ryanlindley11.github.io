@@ -1,7 +1,6 @@
 
 
 body, html {
-    font-family: 'Bebas Neue', sans-serif;
     font-family: 'Raleway', sans-serif;
     background-color: white;
     color: black; 
@@ -118,18 +117,33 @@ a:visited {
 }
 
 /* about page */
+#work {
+    padding: 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+.vertical-list {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+
+.list-item {
+    margin: auto 10px 20px 10px;
+}
+
 .about-headshots {
    max-width: 400px;
    max-height: 400px;
 }
 
 
+
 /*work page*/
-#work {
-    padding: 2%;
-    display: inline-block;
-    text-align: center;
-}
+
 
 .work-img {
     margin: auto;
@@ -148,6 +162,52 @@ a:visited {
     font-size:x-large;
 }
 
+/* work about pages */
+.work-about-header {
+    display: flex;
+    justify-content: center;
+}
+.two-column-layout {
+    display:flex;
+    align-items: center;
+}
+
+.column-left {
+    flex:1;
+    padding-left: 30px;
+    align-content: center;
+}
+
+.column-right {
+    flex: 1;
+    padding: 100px;
+    max-height: auto;
+    max-width: 300px;
+    min-width: auto;
+    min-height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-button {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #007bff;
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.work-button:hover {
+    color: #007bff;
+    background-color: white;
+}
 
 /* contact form */
 form {
@@ -181,25 +241,3 @@ input[type="submit"]:hover {
     background-color: #267AFF;
 }
 
-/* work about pages */
-.work-about-header {
-    display: flex;
-    justify-content: center;
-}
-.two-column-layout {
-    display:flex;
-    align-items: center;
-}
-
-.column-left {
-    flex:1;
-}
-
-.column-right {
-    flex: 1;
-    padding: 100px;
-    max-height: 400px;
-    max-width: 400px;
-    min-width: auto;
-    min-height: auto;
-}
