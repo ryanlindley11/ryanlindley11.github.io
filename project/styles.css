@@ -123,6 +123,14 @@ a:visited {
     text-align: center;
 }
 
+.about-header {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+/*about page*/
 .vertical-list {
     display:flex;
     flex-direction: row;
@@ -140,6 +148,13 @@ a:visited {
    max-height: 400px;
 }
 
+.team-about {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    
+}
 
 
 /*work page*/
