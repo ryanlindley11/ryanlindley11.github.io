@@ -181,7 +181,6 @@ a:visited {
 .column-right {
     flex: 1;
     padding: 100px;
-    max-height: auto;
     max-width: 300px;
     min-width: auto;
     min-height: auto;
