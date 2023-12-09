@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ryan Lindley">
-    <meta name="description" content="We are a business designed to help small businesses find success on the interent">
+    <meta name="description" content="We are a business designed to help small businesses find success on the internet">
     <meta name="keywords" content="small business, SEO, web design, web development">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap" rel="stylesheet">    
@@ -20,9 +20,8 @@
             <a href="index.html">
               <h1>rl</h1>
             </a>
-
-            <!--nav bar-->
           </div>
+            <!--nav bar-->
           <div>
             <nav class="nav">
               <a href="work.html">work</a>
@@ -35,20 +34,32 @@
         <main>
           <div class="catch-container">
             <h1>
-              We make <br />
-              <span class="small" style="font-size: 0.7em">small</span> <br />
-              business a <br />
-              <span class="big" style="font-size: 2.8em">BIG</span> <br />
+              We make <br>
+              <span class="small" style="font-size: 0.7em">small</span> <br>
+              business a <br>
+              <span class="big" style="font-size: 2.8em">BIG</span> <br>
               deal.
             </h1>
           </div>
+
+          <!-- js popup-->
           <div class="popup" onclick="myFunction()">Follow us on social media!
-            <span class="popuptext" id="myPopup">Follow us on X @rlmarketing and LinkedIn rl Marketing!</span>
+            <span class="popuptext" id="myPopup">Follow us on X @rlmarketing and LinkedIn @rl Marketing!</span>
           </div>
+
+          <!-- js script -->
+          <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+          </script>
+
+          
           <!--footer-->
-          <br />
-          <br />
-          <br />
+          <br>
+          <br>
+          <br>
         </main>
         <!-- footer -->
         <footer>

@@ -28,7 +28,7 @@ footer {
     color: black;
     background-color: #007bff;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     width: 100%;
 
 }
@@ -258,13 +258,17 @@ input[type="submit"]:hover {
 /* popup */
 
 .popup {
-    font-style: italic;
+    margin-top: 50px;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
-
+  /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
     width: 160px;
@@ -279,9 +283,9 @@ input[type="submit"]:hover {
     left: 50%;
     margin-left: -80px;
   }
-
-
-.popup .popuptext::after {
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -292,9 +296,20 @@ input[type="submit"]:hover {
     border-color: #555 transparent transparent transparent;
   }
   
- 
+  /* Toggle this class - hide and show the popup */
   .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
   }
